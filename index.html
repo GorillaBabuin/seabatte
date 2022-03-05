@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sea battle</title>
+	<style type="text/css">
+	    .bigdiv{
+	    	height: 885px;
+	    	width: 875px;
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    	border: solid;
+	    }
+		.cage{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+		}
+		.life{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+	    	text-align: center;
+	    	margin-top: 12px;
+		}
+		.cage1{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+		}
+		.cage2{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+		}
+		.cage3{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+		}
+		.cage4{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+		}
+		.first{
+            display: flex;
+		}
+		.letter{
+			border: solid;
+            height: 75px;
+	    	width: 75px;
+	    	text-align: center;
+		}
+		.menu{
+			height: 100px;
+	    	width: 875px;
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    	border: solid;
+		}
+		.score1{
+            border: solid;
+            height: 75px;
+	    	width: 75px;
+	    	text-align: center;
+	    	margin-top: 12px;
+		}
+		.boats1{
+			border: solid;
+            height: 75px;
+	    	width: 75px;
+	    	text-align: center;
+	    	position: absolute;
+	    	margin-left: 795px;
+	    	margin-top: 12px;
+		}
+		.win{
+			background-image: url(win.jpg);
+        	height: 1000px;
+        	width: 2000px;
+        	display: none;
+        	position: absolute;
+        	background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+	   <div class="first">
+		<div class="life">
+			life
+			<h1 class="counter">5</h1>
+		</div>
+		<div class="score1">
+			score
+			<h1 class="score">0</h1>
+		</div>
+		<div class="boats1">
+			boats left
+			<h1 class="boats">10</h1>
+		</div>
+	   </div>
+	</div>
+    <div class="bigdiv">
+    	<div class="first">
+    	 <div class="letter">
+    		<h1></h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>1</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>2</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>3</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>4</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>5</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>6</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>7</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>8</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>9</h1>
+    	 </div>
+    	 <div class="letter">
+    		<h1>10</h1>
+    	 </div>
+
+    	</div>
+    	<div class="first">
+    	 <div class="letter">
+    		<h1>A</h1>
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage1">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage1">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>B</h1>
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>C</h1>
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>D</h1>
+    	 </div>
+    	 <div class="cage1">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage1">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>E</h1>
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>F</h1>
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>G</h1>
+    	 </div>
+    	 <div class="cage4">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>H</h1>
+    	 </div>
+    	 <div class="cage4">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>I</h1>
+    	 </div>
+    	 <div class="cage4">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+        </div>
+        <div class="first">
+         <div class="letter">
+    		<h1>J</h1>
+    	 </div>
+    	 <div class="cage4">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage3">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage">
+    		
+    	 </div>
+    	 <div class="cage2">
+    		
+    	 </div>
+        </div>
+    </div>
+    <div class="win"></div>
+    <script type="text/javascript">
+    	let miss = document.querySelectorAll(".cage")
+    	let one = document.querySelectorAll(".cage1")
+    	let two = document.querySelectorAll(".cage2")
+    	let three = document.querySelectorAll(".cage3")
+    	let four = document.querySelectorAll(".cage4")
+    	let score = 0
+    	let counter = 5
+    	let boats = 10
+    	let boats3 = 6
+
+    for(let i=0; i<80; i=i+1){
+        miss[i].onclick = function(){
+         score = score + 0
+         counter = counter - 1
+         document.querySelector('.counter').innerHTML = counter;
+         document.querySelector('.score').innerHTML = score;
+    	 miss[i].style.background = 'black'
+    	 if(counter==-1){
+		   document.querySelector('.bigdiv').style.display = 'none';
+		   document.querySelector('.menu').style.display = 'none';
+	    }
+        }
+    }
+
+    for(let i=0; i<4; i=i+1){
+        one[i].onclick = function(){
+         score = score + 1
+         counter = 5
+         boats = boats - 1
+         document.querySelector('.counter').innerHTML = counter;
+         document.querySelector('.boats').innerHTML = boats;
+         document.querySelector('.score').innerHTML = score;
+    	 one[i].style.background = 'orange'
+    	 if(score==20){
+		   document.querySelector('.bigdiv').style.display = 'none';
+		   document.querySelector('.menu').style.display = 'none';
+		   document.querySelector('.win').style.display = 'block';
+	    }
+        }
+    }
+    for(let i=0; i<6; i=i+1){
+        two[i].onclick = function(){
+         score = score + 1
+         counter = 5
+         boats = boats - 0.5
+         document.querySelector('.counter').innerHTML = counter;
+         document.querySelector('.boats').innerHTML = boats;
+         document.querySelector('.score').innerHTML = score;
+    	 two[i].style.background = 'red'
+    	 if(score==20){
+		   document.querySelector('.bigdiv').style.display = 'none';
+		   document.querySelector('.menu').style.display = 'none';
+		   document.querySelector('.win').style.display = 'block';
+	    }
+        }
+    }
+    for(let i=0; i<6; i=i+1){
+        three[i].onclick = function(){
+         score = score + 1
+         counter = 5
+         boats3 = boats3 - 1
+         document.querySelector('.counter').innerHTML = counter;
+         document.querySelector('.score').innerHTML = score;
+    	 three[i].style.background = 'blue'
+    	 if(score==20){
+		   document.querySelector('.bigdiv').style.display = 'none';
+		   document.querySelector('.menu').style.display = 'none';
+		   document.querySelector('.win').style.display = 'block';
+	    }
+	    if(boats3==3){
+		   boats = boats - 1
+		   document.querySelector('.boats').innerHTML = boats;
+	    }
+	    if(boats3==0){
+		   boats = boats - 1
+		   document.querySelector('.boats').innerHTML = boats;
+	    }
+        }
+    }
+    for(let i=0; i<4; i=i+1){
+        four[i].onclick = function(){
+         score = score + 1
+         counter = 5
+         boats = boats - 0.25
+         document.querySelector('.boats').innerHTML = boats;
+         document.querySelector('.counter').innerHTML = counter;
+         document.querySelector('.score').innerHTML = score;
+    	 four[i].style.background = 'darkgreen'
+    	 if(score==20){
+    	   document.querySelector('.win').style.display = 'block';
+		   document.querySelector('.bigdiv').style.display = 'none';
+		   document.querySelector('.menu').style.display = 'none';
+	    }
+        }
+    }
+    </script>
+</body>
+</html>
